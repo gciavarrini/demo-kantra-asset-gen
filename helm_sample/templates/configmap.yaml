@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.name }}-config
+data:
+  SPACE: {{ .Values.space }}
+  VERSION: {{ .Values.version }}
+  RANDOM_ROUTE: {{ .Values.randomRoute | toString }}
+  TIMEOUT: "{{ .Values.timeout }}"
+  BUILD_PACKS: |
+    {{- range .Values.buildPacks }}
+    - {{ . }}
+    {{- end }}
+  INSTANCES: "{{ .Values.instances }}"
