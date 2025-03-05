@@ -28,25 +28,12 @@ comment "# Kantra CLI - Asset Generation Demo",
 comment "# This demo shows how to use 'discover' and 'generate' subcommands."
 wait
 
-comment "\n#  Clone the asset-generation repository since the functionality is still in a PR."
-pei 'git clone git@github.com:konveyor/asset-generation.git /tmp/asset-generation'
-pei 'cd /tmp/asset-generation'
-
-comment "\n# Checkout the asset generation PR."
-pei 'gh pr checkout 1'
-pei "cd .."
-
 comment "\n#  Clone the Kantra repository since the functionality is still in a PR."
 pei 'git clone git@github.com:konveyor/kantra.git /tmp/kantra'
 pei 'cd /tmp/kantra'
 
 comment "\n# Checkout the asset generation PR."
 pei 'gh pr checkout 435'
-
-comment "\n#  Hack: Replace a module in go.mod"
-pei "go mod edit -replace github.com/gciavarrini/cf-application-discovery@v0.0.0-20250212150920-7c54782f247e=../asset-generation"
-pei "go mod vendor"
-pei "go mod tidy"
 
 comment "\n# Build the project"
 pei 'go build'
