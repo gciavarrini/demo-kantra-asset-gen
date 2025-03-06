@@ -3,8 +3,6 @@ kind: ConfigMap
 metadata:
   name: {{ .Values.name }}-config
 data:
-  SPACE: {{ .Values.space }}
-  VERSION: {{ .Values.version }}
   RANDOM_ROUTE: {{ .Values.randomRoute | toString }}
   TIMEOUT: "{{ .Values.timeout }}"
   BUILD_PACKS: |
