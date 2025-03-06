@@ -62,7 +62,7 @@ comment "\n# After executing the discover command, we expect that the command pr
 pei './kantra discover cloud-foundry --input ./cf-nodejs-app.yaml'
 wait
 
-comment "\n# ... But we can also write the ouput on a file"
+comment "\n# ... But we can also write the output on a file"
 pei './kantra discover cloud-foundry --input ./cf-nodejs-app.yaml --output cf-nodejs-app-canonical.yaml'
 
 pei 'cat  cf-nodejs-app-canonical.yaml'
