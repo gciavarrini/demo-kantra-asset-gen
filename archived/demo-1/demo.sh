@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Include the "demo-magic" helpers
-source demo-magic.sh
+source ../demo-magic.sh
 
 # PS1='➜ '
 DEMO_PROMPT="➜ "
 
 DEMO_PROMPT="${GREEN}➜ ${CYAN}\W ${COLOR_RESET}"
-TYPE_SPEED=8
-PROMPT_TIMEOUT=3
+TYPE_SPEED=80
+PROMPT_TIMEOUT=1
 DEMO_COMMENT_COLOR=$PURPLE
 SHOW_CMD_NUMS=true
 
@@ -32,7 +32,7 @@ wait
 git clone -q git@github.com:konveyor/kantra.git /tmp/kantra 
 cd /tmp/kantra 
 
-# comment "\n# Checkout the asset generation PR."
+comment "\n# Checkout the asset generation PR."
 gh pr checkout 435 &> /dev/null
 
 # comment "\n# Build the project"
