@@ -16,6 +16,11 @@ executed directly.
     input.
 
     [![demo discover manifest](https://img.youtube.com/vi/T8i4sV_Gx3A/0.jpg)](https://youtu.be/T8i4sV_Gx3A)
+  
+  * The `demo-secrets` folder focuses on how sensitive data (e.g., credentials)
+    are automatically detected and externalized during discovery.
+
+    [![demo secrets handling](https://img.youtube.com/vi/boYWovcBaLo/0.jpg)](https://youtu.be/boYWovcBaLo)
 
 ## How to run
 
