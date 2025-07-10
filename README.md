@@ -28,6 +28,11 @@ executed directly.
     
     [![demo discover and generate](https://img.youtube.com/vi/2JTiKYItenM/0.jpg)](https://youtu.be/2JTiKYItenM)
 
+  * The `demo-live-discover` folder is intended for live discover Cloud Foundry
+    application from real environments.
+    
+    [![demo live discover](https://img.youtube.com/vi/KoA-ixCG_TQ/0.jpg)](https://youtu.be/KoA-ixCG_TQ)
+
 ## How to run
 
 Navigate to the directory of the demo you'd like to execute, then run:
