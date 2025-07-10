@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Include the "demo-magic" helpers
-source ../demo-magic.sh
+source ../scripts/demo-magic.sh
 
 # PS1='➜ '
 DEMO_PROMPT="➜ "
