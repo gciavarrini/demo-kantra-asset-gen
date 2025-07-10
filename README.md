@@ -22,6 +22,12 @@ executed directly.
 
     [![demo secrets handling](https://img.youtube.com/vi/boYWovcBaLo/0.jpg)](https://youtu.be/boYWovcBaLo)
 
+  * The `demo-discover-generate` focus on a end to end flow: from the Cloud
+    Foundry Manifest, to the Discover Manifest and finally uses the `generate`
+    subcommand.
+    
+    [![demo discover and generate](https://img.youtube.com/vi/2JTiKYItenM/0.jpg)](https://youtu.be/2JTiKYItenM)
+
 ## How to run
 
 Navigate to the directory of the demo you'd like to execute, then run:

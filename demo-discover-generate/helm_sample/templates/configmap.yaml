@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.name }}-config
+data:
+  TIMEOUT: "{{ .Values.timeout }}"
+  INSTANCES: "{{ .Values.instances }}"
+  PROCESS_TYPE: "{{ (index .Values.processes 0).type }}"
+  PROCESS_TIMEOUT: "{{ (index .Values.processes 0).timeout }}"
+  DISK: "{{ (index .Values.processes 0).disk }}"
+  MEMORY: "{{ (index .Values.processes 0).memory }}"
+  LOG_RATE_LIMIT: "{{ (index .Values.processes 0).logRateLimit }}"
+  HEALTH_CHECK: |
+    type: {{ (index .Values.processes 0).healthCheck.type }}
+    endpoint: {{ (index .Values.processes 0).healthCheck.endpoint }}
+    timeout: {{ (index .Values.processes 0).healthCheck.timeout }}
+    interval: {{ (index .Values.processes 0).healthCheck.interval }}
+  READINESS_CHECK: |
+    type: {{ (index .Values.processes 0).readinessCheck.type }}
+    endpoint: {{ (index .Values.processes 0).readinessCheck.endpoint }}
+    timeout: {{ (index .Values.processes 0).readinessCheck.timeout }}
+    interval: {{ (index .Values.processes 0).readinessCheck.interval }}
