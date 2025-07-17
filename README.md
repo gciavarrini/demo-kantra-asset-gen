@@ -14,24 +14,31 @@ executed directly.
   * The `demo-discover-manifest` folder demonstrates how the discovery process
     produces a normalized YAML,`Discovery Manifest`, based on Cloud Foundry
     input.
+    **[▶️ Watch demo discover manifest](https://youtu.be/T8i4sV_Gx3A)**
 
-    [![demo discover manifest](https://img.youtube.com/vi/T8i4sV_Gx3A/0.jpg)](https://youtu.be/T8i4sV_Gx3A)
-  
+    [![Watch the demo discover manifest](https://img.youtube.com/vi/T8i4sV_Gx3A/hqdefault.jpg)](https://youtu.be/T8i4sV_Gx3A)
+   
   * The `demo-secrets` folder focuses on how sensitive data (e.g., credentials)
     are automatically detected and externalized during discovery.
 
-    [![demo secrets handling](https://img.youtube.com/vi/boYWovcBaLo/0.jpg)](https://youtu.be/boYWovcBaLo)
+    **[▶️ Watch demo secrets handling](https://youtu.be/boYWovcBaLo)**
 
-  * The `demo-discover-generate` focus on a end to end flow: from the Cloud
+    [![demo secrets handling](https://img.youtube.com/vi/boYWovcBaLo/hqdefault.jpg)](https://youtu.be/boYWovcBaLo)
+
+  * The `demo-discover-generate` focus on an end to end flow: from the Cloud
     Foundry Manifest, to the Discover Manifest and finally uses the `generate`
     subcommand.
     
-    [![demo discover and generate](https://img.youtube.com/vi/2JTiKYItenM/0.jpg)](https://youtu.be/2JTiKYItenM)
+    **[▶️ Watch demo discover and generate](https://youtu.be/2JTiKYItenM)**
+
+    [![demo discover and generate](https://img.youtube.com/vi/2JTiKYItenM/hqdefault.jpg)](https://youtu.be/2JTiKYItenM)
 
   * The `demo-live-discover` folder is intended for live discover Cloud Foundry
     application from real environments.
+
+    **[▶️ Watch demo live discover video](https://youtu.be/KoA-ixCG_TQ)**
     
-    [![demo live discover](https://img.youtube.com/vi/KoA-ixCG_TQ/0.jpg)](https://youtu.be/KoA-ixCG_TQ)
+    [![demo live discover](https://img.youtube.com/vi/KoA-ixCG_TQ/hqdefault.jpg)](https://youtu.be/KoA-ixCG_TQ)
 
 ## How to run
 
