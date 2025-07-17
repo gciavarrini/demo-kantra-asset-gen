@@ -14,6 +14,7 @@ executed directly.
   * The `demo-discover-manifest` folder demonstrates how the discovery process
     produces a normalized YAML,`Discovery Manifest`, based on Cloud Foundry
     input.
+
     **[▶️ Watch demo discover manifest](https://youtu.be/T8i4sV_Gx3A)**
 
     [![Watch the demo discover manifest](https://img.youtube.com/vi/T8i4sV_Gx3A/hqdefault.jpg)](https://youtu.be/T8i4sV_Gx3A)
