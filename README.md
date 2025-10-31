@@ -41,6 +41,15 @@ executed directly.
     
     [![demo live discover](https://img.youtube.com/vi/KoA-ixCG_TQ/hqdefault.jpg)](https://youtu.be/KoA-ixCG_TQ)
 
+  * The `demo-org-filtering` demonstrates the organization filtering
+    feature for Cloud Foundry discovery, showing how to filter applications
+    by organization names, combine org and space filters, and handle various
+    edge cases (non-existent orgs/spaces, warnings, etc.).
+
+    **[▶️ Watch demo organization filter video](https://youtu.be/KoA-ixCG_TQ)**
+
+    [![demo organization filter](https://img.youtube.com/vi/4IDPByi5dJU/hqdefault.jpg)](https://youtu.be/4IDPByi5dJU)
+
 ## How to run
 
 Navigate to the directory of the demo you'd like to execute, then run:
