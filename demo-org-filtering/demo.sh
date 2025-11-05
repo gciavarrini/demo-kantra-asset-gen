@@ -24,7 +24,7 @@ function note() {
 clear
 
 DEMO_DIR=$(pwd)
-rm -rf /tmp/kantra/
+# rm -rf /tmp/kantra/
 rm -rf /tmp/output-dir
 mkdir /tmp/output-dir
 
@@ -33,15 +33,15 @@ comment "# Kantra CLI - Organization Filtering Demo"
 comment "# This demo showcases the new organization filtering feature for Cloud Foundry discovery"
 wait
 
-comment "\n# Clone the Kantra repository"
-git clone -q git@github.com:konveyor/kantra.git /tmp/kantra 
+# comment "\n# Clone the Kantra repository"
+# git clone -q git@github.com:konveyor/kantra.git /tmp/kantra 
 cd /tmp/kantra 
 
-comment "\n# Checkout the organization filtering PR"
-gh pr checkout 587 &> /dev/null
+# comment "\n# Checkout the organization filtering PR"
+# gh pr checkout 587 &> /dev/null
 
-comment "\n# Build the project"
-go build &> /dev//null
+# comment "\n# Build the project"
+# go build &> /dev//null
 
 # wait
 comment "\n# Prerequisites:"
@@ -49,10 +49,13 @@ comment "# - Ensure your Cloud Foundry config is in /tmp/.cf/config.json"
 wait 
 
 comment "\n# =========================================="
-comment "# Scenario 1: List ALL apps from ALL organizations"
+comment "# Scenario 1: --orgs flag is required when listing apps"
 comment "# =========================================="
 wait
 pei "./kantra discover cloud-foundry --use-live-connection --cf-config=/tmp/ --list-apps"
+wait
+
+note "\n# Note: --list-apps requires at least one organization specified via --orgs"
 wait
 
 clear
